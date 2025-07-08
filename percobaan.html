@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Genome", sans-serif;
+}
+
+:root{
+    --main-color:#ffffff;
+    --second-color: #155DE9;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: var(--second-color);
+}
+
+.myprofile {
+    display: flex;
+    justify-content: center;
+}
+
+
+.myprofile img {
+    width: 50%;
+}
+
+.myprofile .konten-profile {
+    width: 50%;
+    padding: 3em 5em;
+    background-color: var(--second-color); 
+}
+
+.konten-profile .lorem {
+    background-color: var(--main-color);
+    padding: 3em;
+    box-shadow: -10px 10px 0 #1938d1;
+}
+
+.konten-profile p {
+    margin-bottom: 20px;
+}
+
+.konten-profile h1 {
+    margin-bottom: 20px;
+    color: var(--main-color);
+    font-weight: 900px;
+}
+
+.konten-profile button {
+    padding: 20px;
+
+}
+
+.konten-profile .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:nth-of-type(1) {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    color: var(--second-color);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 40px;
+    line-height: 25px;
+}
+
+.left-content {
+    padding-top: 4em;
+    padding-right: 4;
+    padding-bottom: 8em;
+    padding-left: 25em;
+}
+
+.right-content {
+    padding-top: 4em;
+    padding-right: 20em;
+    padding-bottom: 8em;
+    padding-left: 4em;
+}
+
+.content h3 {
+    margin-bottom: 20px;
+}
+
+.right-content ul:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+.left-content ul:nth-of-type(1) {
+    margin-bottom: 20px;
+}
+
+main h2 {
+    padding-left: 12em;
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    header h3 {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .myprofile {
+        flex-direction: column;
+    }
+
+    .myprofile img {
+        width: 100%;
+    }
+
+    .myprofile .konten-profile {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .konten-profile h1 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .konten-profile .lorem {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    main h2 {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .content {
+        grid-template-columns: 100%;
+        box-sizing: border-box;
+        pad: 20px;
+    }
+
+    .left-content {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .right-content {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer h1 {
+    margin-right: 300px;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
+
+.footer {
+            background-color: #0057ff;
+            display: flex;
+            align-items: top;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .footer h1 {
+            margin-left: 300px;
+            color: whitesmoke;
+            margin-top: 100px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 90px;
+            padding: 5px;
+        }
+
+        input {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 80px;
+            margin-top: 15px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+        }
+
+        footer p {
+            background-color: rgb(2, 2, 139);
+            color: rgb(165, 157, 157);
+            padding: 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Luki Luna</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Experience & Education</a>
+        <a href="">Portfolio</a>
+        <a href="">Writing</a>
+        <a href="">Speaking</a>
+      </nav>
+    </header>
+
+    <div class="myprofile">
+      <img src="../tugas/img/gambar.avif" alt="" />
+      <div class="konten-profile">
+        <h1>
+          Hi... I'am Intan. <br />
+          I'm a Design Lead <br />
+          based in Berlin.
+        </h1>
+        <div class="lorem">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsa
+            placeat cum, officiis aut necessitatibus fuga enim provident
+            mollitia atque nobis, esse veritatis eos sunt et, rem sit
+            consequatur modi consectetur? Ratione vel laudantium deserunt
+            consectetur voluptas recusandae est, sapiente necessitatibus
+            perferendis laborum numquam, error praesentium veniam consequuntur
+            facere. Nisi?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsa
+            placeat cum, officiis aut necessitatibus fuga enim provident
+            mollitia atque nobis, esse veritatis eos sunt et, rem sit
+            consequatur modi consectetur? Ratione vel laudantium deserunt
+            consectetur voluptas recusandae est, sapiente necessitatibus
+            perferendis laborum numquam, error praesentium veniam consequuntur
+            facere. Nisi?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsa
+            placeat cum, officiis aut necessitatibus fuga enim provident
+            mollitia atque nobis, esse veritatis eos sunt et, rem sit
+            consequatur modi consectetur? Ratione vel laudantium deserunt
+            consectetur voluptas recusandae est, sapiente necessitatibus
+            perferendis laborum numquam, error praesentium veniam consequuntur
+            facere. Nisi?
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ipsa
+            placeat cum, officiis aut necessitatibus fuga enim provident
+            mollitia atque nobis, esse veritatis eos sunt et, rem sit
+            consequatur modi consectetur? Ratione vel laudantium deserunt
+            consectetur voluptas recusandae est, sapiente necessitatibus
+            perferendis laborum numquam, error praesentium veniam consequuntur
+            facere. Nisi?
+          </p>
+          <div class="buttons">
+            <button>Chek on my CV</button>
+            <button>some of my works</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <h2>What I Do</h2>
+        <div class="content">
+            <div>
+            <ul class="left-content">
+                <h3>Design Leadership</h3>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius libero sunt molestiae cumque autem dolorem. Quam unde beatae officiis perspiciatis, at ducimus velit iste libero!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere, minima ab numquam libero harum sit pariatur reiciendis totam nobis illo corporis esse ut temporibus.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum itaque ullam similique? Distinctio minus odit laudantium assumenda aspernatur, ipsum officia eaque placeat, quod quaerat esse.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, autem praesentium perspiciatis ex exercitationem assumenda nesciunt. Minima repudiandae odio illum asperiores, nihil aliquam excepturi dolore.</li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <h3>Workshop facilitation and creative problem solving</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <h3>Strategic Design, UX Design and Research</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h1>CONTACT ME FOR <br> COLLABORATIN AND <br> SPEAKING <br> ENGAGEMENT <br> OPPORTUNTIES!</h1>
+            <form>
+                <input type="text" placeholder="Name" required /> <br>
+                <input type="email" placeholder="Email" required /> <br>
+                <input type="tel" placeholder="Phone" /> <br>
+                <textarea placeholder="Type your message here..."></textarea> <br>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <p>© 2023 by Lee Phan. Proudly created with Wix.com</p>
+    </footer>
+  </body>
+</html>
+</body>
+</html>
