@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero-image {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .hero-image h3 {
+            padding-left: 50px;
+        }
+
+        .hero-image ul {
+            display: flex;
+            padding-right: 70px;
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        .hero-image ul li {
+            padding: 20px;
+            color: cadetblue;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-top: 80px;
+            padding-left: 140px;
+        }
+
+        img {
+            height: 380px;
+            width: 300px;
+            padding: 20px;
+        }
+
+        .img p {
+            background-color: white;
+            border: 1px black solid;
+            align-items: flex-start;
+            padding: 20px;
+            width: 250px;
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 30px;
+        }
+
+        .footer {
+            background-color: #0057ff;
+            display: flex;
+            align-items: top;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .footer h1 {
+            margin-left: 300px;
+            color: whitesmoke;
+            margin-top: 100px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 90px;
+            padding: 5px;
+        }
+
+        input {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 80px;
+            margin-top: 15px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+        }
+
+        footer p {
+            background-color: rgb(3, 3, 81);
+            color: gray;
+            padding: 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-image">
+        <h3>LUKY PRIMADANI.</h3>
+        <ul>
+            <li>Home</li>
+            <li>Experience & Education</li>
+            <li> portfolio</li>
+            <li>Writing</li>
+            <li>Speaking</li>
+        </ul>
+    </div>
+
+    <div class="img">
+        <div class="img1">
+            <img src="../tugas/img/gambar1.avif" alt="">
+            <p>Start conducting <br> researh with unmoderate <br> remote use test</p>
+        </div>
+        <div class="img2">
+            <img src="../tugas/img/gambar2.avif" alt="">
+            <p>Challenges in strating <br> research in digital product <br> development</p>
+        </div>
+        <div class="img3">
+            <img src="../tugas/img/gambar3.avif" alt="">
+            <p>Strategis in adopting and <br> scaling user research within <br> 1,5 year</p>
+        </div>
+        <div class="img4">
+            <img src="../tugas/img/gambar4.avif" alt="">
+            <p>Trhive with UX by assesing <br> UX maturity strage on your <br> organization</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h1>Contact me for <br> collaboration and <br> speaking <br> engagement <br> opportunities!</h1>
+            <form>
+                <input type="text" placeholder="Name" required /> <br>
+                <input type="email" placeholder="Email" required /> <br>
+                <input type="tel" placeholder="Phone" /> <br>
+                <textarea placeholder="Type your message here..."></textarea> <br>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <p>© 2023 by Lee Phan. Proudly created with Wix.com</p>
+    </footer>
+</body>
+</html>

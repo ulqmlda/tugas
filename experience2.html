@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    }
+
+        body {
+    font-family: "Genome", sans-serif;
+    }
+
+        :root{
+    --main-color:#ffffff;
+    --second-color: #155DE9;
+    }
+
+        header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    }
+
+        nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    }
+
+        nav a:hover {
+    color: var(--second-color);
+    }
+
+    .kiri {
+            background-color: #0057ff;
+            color: white;
+            width: 200px;
+            font-size: 13px;
+            padding-left: 15px;
+        }
+
+        .kiri h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 40px;
+        }
+
+        .skillsets {
+            margin-bottom: 40px;
+        }
+
+        .skillsets h4 {
+            margin-bottom: 10px;
+        }
+
+        .skillsets ul {
+            padding-left: 20px;
+        }
+
+
+        .education h4 {
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .paragraph {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,350px);
+            padding: 14em;
+        }
+
+        .kiri {
+            grid-column: 1;
+            grid-row: 1/span 2;
+        }
+
+        .atas {
+            grid-column: 2/span 3;
+            grid-row: 1;
+        }
+
+        .tengah {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .kanan {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <h3>Luki Luna</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Experience & Education</a>
+        <a href="">Portfolio</a>
+        <a href="">Writing</a>
+        <a href="">Speaking</a>
+      </nav>
+    </header>
+
+    <main>
+        <div class="paragraph">
+            <div class="bagian kiri">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>primadani@gmail.com <br> +726374857 <br> strokower strasse 147 <br> 147223     berlin <br> www.luckyprimadani.com</p>
+            </div>
+            <div class="skillsets">
+                <h2>Skillsest</h2>
+                <h4>Strategic desain Leadership</h4>
+                <p>UX strategy & roadmap <br> Impact metrics measurement <br> Remote/onsite colaboration <br> Big picture/system thinking</p>
+                <br>
+                <h4>Prodict design</h4>
+                <p>Qual & quant user resach <br> (Generative & evaluative) <br> UX prototyping/wireframing <br> trend analysis <br> workshop ficillation:</p>
+                <ul>
+                    <li>design sprint</li>
+                    <li>product innovation</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <h4>Matters in bussines design</h4>
+                <p>(1st place scholarship <br> awardee)</p>
+                <p class="miring">Master of art</p>
+                <p>milan,italy <br> 2013</p>
+                <h4>Bahcelor in visual <br> Communication Design</h4>
+                <p>Bandung institute of <br> technology</p>
+                <p class="miring">Bahcelor of art</p>
+                <p>Bandung-Indonesia <br> 2005-2009</p>
+            </div>
+        </div>
+        <div class="bagian atas">
+            <h1>Luky <br> Primadani</h1>
+            <h2>Lead User Experince Design</h2>
+            <p>Design lead with 15+ years of experience turning complex problems into pureposful <br> solutions.Bridging design and bussines with a mindset shape by endurance,creativity, <br> and colaboration.I build strong design practices and love making big ideas practical <br> across industries</p>
+            <h2>Professional Experience</h2>
+        </div>
+        <div class="bagian tengah">
+            <h4>Bikmo GmbH</h4>
+            <p>insurtech,remote</p>
+            <br>
+            <p>mar 2024-Jan 2025</p>
+            <h4>Boston Consulting Group</h4>
+            <p>Consulting,Berlin</p>
+            <br>
+            <p>July 2022-Feb-2024</p> <br> <br>
+            <p>sep 2021-jul 2022</p>
+            <h4>Flix GmbH</h4>
+            <p>mobility,Berlin</p>
+            <p>sep 2019-sep 2021</p>
+            <p>sep 2015-mar 2017</p>
+            <h4>HeavenHR</h4>
+            <p>Saas,Berlin</p>
+            <p>mar 2024-jan 2025</p>
+        </div>
+        <div class="bagian kanan">
+            <h4>Head of experience design</h4>
+            <p>Part of leadership team.Spearheaded design strategy and <br> execution for a UK-based award-wining cycle incurance <br> scale-up,driving growth design to boost bussines metrics.</p>
+            <p>Key achievetment:increased auto-renewal opt-in by 199.99% <br> in 3 months potientially improving retention by ~5% and <br> saving E160K in revenue</p>
+            <p>led digital transformation intiatives for clients in banking. <br> insurance,healthcare,automotive,and retail</p>
+            <h4>senior strategic designer</h4>
+            <p>Selected project:led strategic UX research and testing <br> intiatives for a Norwegian bank's online banking platform</p>
+            <h4>Strategic designer</h4>
+            <p>Selected project:Co-led a strategic innovation workshop <br> for a leading german healthcare company focused on <br> disruptive bussines models.</p>
+            <p>lead design Thinking approach to optimise product <br> developmentad and bussines intiatives  for Germany's <br> leading mobility platform</p>
+            <h4>Senior UX designer</h4>
+            <p>key achievetment:introducted and le product design <br> innovation workshops resulting in a 4% convession rate lift <br> on mobile web and 50% increased team efficienci</p>
+            <h4>UI/UX designer</h4>
+            <p>UI/UX human resources SaaS dahsboard, <br> enhancing key features through usability testing and <br> estabilishing the brand's visual identity across all channels</p>
+        </div>
+    </main>
+</body>
+</html>
