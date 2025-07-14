@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    }
+
+        :root{
+    --main-color:#ffffff;
+    --second-color: #155DE9;
+    }
+
+        header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    }
+
+        nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    }
+
+        nav a:hover {
+    color: var(--second-color);
+    }
+
+    .image {
+        margin-bottom: 300px;
+    }
+
+    .img {
+        display: flex;
+        background-color: rgb(228, 227, 227);
+        border: 2px black solid;
+        width: 75%;
+        height: 500px;
+        margin-top: 30px;
+        margin-left: 150px;
+        justify-content: space-between;
+        box-shadow: 0px 4px 4px rgba(18, 18, 18, 0.5);
+    }
+
+    .img img {
+        width: 65%;
+        object-fit: cover;
+    }
+
+    .figcaption {
+        margin-top: 300px;
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .footer {
+            background-color: #0057ff;
+            display: flex;
+            align-items: top;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+
+    .footer h1 {
+            margin-left: 300px;
+            color: whitesmoke;
+            margin-top: 100px;
+        }
+
+    form {
+            max-width: 400px;
+            margin: 90px;
+            padding: 5px;
+        }
+
+    input {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+    textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 80px;
+            margin-top: 15px;
+        }
+
+    input::placeholder,
+    textarea::placeholder {
+            color: white;
+            font-size: 15px;
+        }
+
+    textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+        }
+
+    footer p {
+            background-color: rgb(3, 3, 81);
+            color: gray;
+            padding: 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+    @media (max-width: 768px) {
+        .image {
+            flex-direction: row;
+            margin-left: -100px;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer h1 {
+            margin-right: 300px;
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        form {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <h3>Luki Luna</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Experience & Education</a>
+        <a href="">Portfolio</a>
+        <a href="">Writing</a>
+        <a href="">Speaking</a>
+      </nav>
+    </header>
+
+    <div class="image">
+        <div class="img img1">
+            <div class="figcaption">
+                <h4>Mobile Web Redesign <br> Strategy</h4>
+                <p>UX Research, Design Sprint </p>
+            </div>
+            <img src="../tugas/img/gambar5.avif" alt="">
+        </div>
+        <div class="img img2">
+            <div class="figcaption">
+                <h4>Embedding User Centric <br> Culture</h4>
+                <p>UX Research, UX Strategy, <br> Prototyping</p>
+            </div>
+            <img src="../tugas/img/gambar6.avif" alt="">
+        </div>
+        <div class="img img3">
+            <div class="figcaption">
+                <h4>Web Navigation Redesign</h4>
+                <p>UX Research</p>
+            </div>
+            <img src="../tugas/img/gambar7.avif" alt="">
+        </div>
+        <div class="img img4">
+            <div class="figcaption">
+                <h4>HeavenHR Web Design</h4>
+                <p>UI/UX Design, Art Direction, <br> Visual Design</p>
+            </div>
+            <img src="../tugas/img/gambar8.avif" alt="">
+        </div>
+        <div class="img img5">
+            <div class="figcaption">
+                <h4>HeavenHR Vacation & Absence Redesign</h4>
+                <p>UX Research, UI/UX Design</p>
+            </div>
+            <img src="../tugas/img/gambar9.avif" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h1>CONTACT ME FOR <br> COLLABORATIN AND <br> SPEAKING <br> ENGAGEMENT <br> OPPORTUNTIES!</h1>
+            <form>
+                <input type="text" placeholder="Name" required /> <br>
+                <input type="email" placeholder="Email" required /> <br>
+                <input type="tel" placeholder="Phone" /> <br>
+                <textarea placeholder="Type your message here..."></textarea> <br>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <p>© 2023 by Lee Phan. Proudly created with Wix.com</p>
+    </footer>
+</body>
+</html>

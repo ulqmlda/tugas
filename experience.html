@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    }
+
+        :root{
+    --main-color:#ffffff;
+    --second-color: #155DE9;
+    }
+
+        header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    }
+
+        nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    }
+
+        nav a:hover {
+    color: var(--second-color);
+    }
+
+    .kiri {
+            background-color: #0057ff;
+            color: white;
+            width: 200px;
+            height: 950px;
+            font-size: 13px;
+            padding-left: 28px;
+            padding-top: 150px;
+        }
+
+    .kiri h2 {
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+    .contact p {
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+    .skillsets {
+            margin-bottom: 40px;
+        }
+
+    .skillsets h4 {
+            margin-bottom: 10px;
+        }
+
+    .skillsets ul {
+            padding-left: 20px;
+        }
+
+
+    .education h4 {
+            margin-bottom: 10px;
+            margin-top: 40px;
+        }
+
+    .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            font-family: Arial, sans-serif;
+            padding-top: 100px;
+        }
+
+    .circle-btn {
+            width: 40px;
+            height: 30px;
+            border-radius: 40%;
+            border: 1px solid #ddd;
+            background-color: white;
+            color: #1976d2;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s ease;
+        }
+
+    .circle-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+    .page-number {
+            font-size: 15px;
+            color: #111;
+            width: 60px;
+            height: 25px;
+            border-radius: 40%;
+            border: 1px solid #ddd;
+            background-color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+    .paragraph {
+        display: flex;
+        margin-left: 200px;
+    }
+
+    .kanan {
+        margin-left: 30px;
+    }
+
+    .kanan h1 {
+        font-size: 70px;
+        padding-top: 10px;
+        color: #0057ff;
+    }
+
+    .kanan h2 {
+        padding-top: 20px;
+    }
+
+    .kanan p {
+        padding-top: 10px;
+    }
+
+    .bawah {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .bikmo p {
+        padding-bottom: 15px;
+    }
+
+    .head {
+        padding-left: 20px;
+    }
+
+    .head p {
+        margin-bottom: 10px;
+    }
+    
+
+        .footer {
+            background-color: #0057ff;
+            display: flex;
+            align-items: top;
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .footer h1 {
+            margin-left: 300px;
+            color: whitesmoke;
+            margin-top: 100px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 90px;
+            padding: 5px;
+        }
+
+        input {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+            padding-right: 200px;
+            padding-bottom: 80px;
+            margin-top: 15px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            background-color: #0057ff;
+            color: whitesmoke;
+        }
+
+        footer p {
+            background-color: rgb(2, 2, 139);
+            color: rgb(165, 157, 157);
+            padding: 20px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+        display: block;
+        text-align: center;
+        margin: 0;
+        }
+
+            header h3 {
+        margin-bottom: 10px;
+        }
+
+            nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        }
+
+        .paragraph {
+            flex-direction: column;
+            margin-left: -0%;
+        }
+
+        .kiri {
+            margin-left: 230px;
+            margin-bottom: 80px;
+        }
+
+        .bawah {
+            box-sizing: border-box;
+            padding-bottom: 90px;
+        }
+
+        .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer h1 {
+    margin-right: 300px;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+  }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <h3>Luki Luna</h3>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Experience & Education</a>
+        <a href="">Portfolio</a>
+        <a href="">Writing</a>
+        <a href="">Speaking</a>
+      </nav>
+    </header>
+
+    <main>
+        <div class="pagination">
+            <button class="circle-btn">&#x276E;</button>
+            <span class="page-number"><strong>1</strong> / 2</span>
+            <button class="circle-btn">&#x276F;</button>
+        </div>
+
+        <div class="paragraph">
+            <div class="kiri">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p>primadani@gmail.com <br> +726374857 <br> strokower strasse 147 <br> 147223     berlin <br> www.luckyprimadani.com</p>
+            </div>
+            <div class="skillsets">
+                <h2>Skillsest</h2>
+                <h4>Strategic desain Leadership</h4>
+                <p>UX strategy & roadmap <br> Impact metrics measurement <br> Remote/onsite colaboration <br> Big picture/system thinking</p>
+                <br>
+                <h4>Prodict design</h4>
+                <p>Qual & quant user resach <br> (Generative & evaluative) <br> UX prototyping/wireframing <br> trend analysis <br> workshop ficillation:</p>
+                <ul>
+                    <li>design sprint</li>
+                    <li>product innovation</li>
+                </ul>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <h4>Matters in bussines design</h4>
+                <p>(1st place scholarship <br> awardee)</p>
+                <p class="miring">Master of art</p>
+                <p>milan,italy <br> 2013</p>
+                <h4>Bahcelor in visual <br> Communication Design</h4>
+                <p>Bandung institute of <br> technology</p>
+                <p class="miring">Bahcelor of art</p>
+                <p>Bandung-Indonesia <br> 2005-2009</p>
+            </div>
+        </div>
+        <div class="kanan">
+            <h1>Luky <br> Primadani</h1>
+            <h2>Lead User Experince Design</h2>
+            <p>Design lead with 15+ years of experience turning complex problems into pureposful <br> solutions.Bridging design and bussines with a mindset shape by endurance,creativity, <br> and colaboration.I build strong design practices and love making big ideas practical <br> across industries</p>
+            <h2>Professional Experience</h2>
+        <div class="bawah">
+            <div class="bikmo">
+            <h4>Bikmo GmbH</h4>
+            <p>insurtech,remote</p> <br> <br>
+            <p>mar 2024-Jan 2025</p> <br> <br>
+            <h4>Boston Consulting Group</h4>
+            <p>Consulting,Berlin</p>
+            <p>July 2022-Feb-2024</p> <br>
+            <p>sep 2021-jul 2022</p> <br> <br> <br>
+            <h4>Flix GmbH</h4>
+            <p>mobility,Berlin</p> 
+            <p>sep 2019-sep 2021</p> <br> <br>
+            <p>sep 2015-mar 2017</p>
+            <h4>HeavenHR</h4>
+            <p>Saas,Berlin</p>
+            <p>mar 2024-jan 2025</p>
+        </div>
+        <div class="head">
+            <h4>Head of experience design</h4>
+            <p>Part of leadership team.Spearheaded design strategy and <br> execution for a UK-based award-wining cycle incurance <br> scale-up,driving growth design to boost bussines metrics.</p>
+            <p>Key achievetment:increased auto-renewal opt-in by 199.99% <br> in 3 months potientially improving retention by ~5% and <br> saving E160K in revenue</p>
+            <p>led digital transformation intiatives for clients in banking. <br> insurance,healthcare,automotive,and retail</p>
+            <h4>senior strategic designer</h4>
+            <p>Selected project:led strategic UX research and testing <br> intiatives for a Norwegian bank's online banking platform</p>
+            <h4>Strategic designer</h4>
+            <p>Selected project:Co-led a strategic innovation workshop <br> for a leading german healthcare company focused on <br> disruptive bussines models.</p>
+            <p>lead design Thinking approach to optimise product <br> developmentad and bussines intiatives  for Germany's <br> leading mobility platform</p>
+            <h4>Senior UX designer</h4>
+            <p>key achievetment:introducted and le product design <br> innovation workshops resulting in a 4% convession rate lift <br> on mobile web and 50% increased team efficiency</p>
+            <h4>UI/UX designer</h4>
+            <p>UI/UX human resources SaaS dahsboard, <br> enhancing key features through usability testing and <br> estabilishing the brand's visual identity across all channels</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h1>CONTACT ME FOR <br> COLLABORATIN AND <br> SPEAKING <br> ENGAGEMENT <br> OPPORTUNTIES!</h1>
+            <form>
+                <input type="text" placeholder="Name" required /> <br>
+                <input type="email" placeholder="Email" required /> <br>
+                <input type="tel" placeholder="Phone" /> <br>
+                <textarea placeholder="Type your message here..."></textarea> <br>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <p>© 2023 by Lee Phan. Proudly created with Wix.com</p>
+    </footer>
+</body>
+</html>
